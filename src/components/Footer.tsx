@@ -23,8 +23,9 @@
 
 
 
-const Footer: React.FC = () => {
+import React from 'react';
 
+const Footer: React.FC = () => {
     return (
         <footer className="absolute bottom-0 w-full bg-neutral-100">
             <p className="py-3 px-8 text-sm text-slate-600">India</p>
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
                     <li>About</li>
                     <li>Advertising</li>
                     <li>Business</li>
-                    <li>How Search works </li>
+                    <li>How Search works</li>
                 </ul>
                 <ul className="flex ml-auto [&>*]:ml-6 text-sm text-slate-600">
                     <li>Privacy</li>
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
                 </ul>
             </div>
         </footer>
-    )       
-}
+    );
+};
 
 export default Footer;

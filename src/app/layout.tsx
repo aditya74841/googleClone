@@ -1,19 +1,19 @@
-import './globals.css'
-
+import React from "react";
+import "./globals.css";
 
 export const metadata = {
-  title: 'Google ',
-  description: 'Aditya Ranjan',
-}
+  title: "Google ",
+  description: "Aditya Ranjan",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div>{children}</div>
+      </body>
     </html>
-  )
-}
+  );
+};
+
+export default RootLayout;
